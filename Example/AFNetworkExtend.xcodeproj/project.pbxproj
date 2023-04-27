@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		326C620BF41F3F68142E76F5 /* Pods-AFNetworkExtend_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkExtend_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AFNetworkExtend_Tests/Pods-AFNetworkExtend_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		41686FA8C7C0584918ECF321 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		4270B4AFB8865B8281206644 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		41686FA8C7C0584918ECF321 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4270B4AFB8865B8281206644 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4903AA915C5501B039D8A15F /* Pods_AFNetworkExtend_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworkExtend_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* AFNetworkExtend_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFNetworkExtend_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		A0B2F8E0DDF2406E7C8521F5 /* Pods_AFNetworkExtend_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworkExtend_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB554297DBECCF2A46CAF358 /* Pods-AFNetworkExtend_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkExtend_Example.debug.xcconfig"; path = "Target Support Files/Pods-AFNetworkExtend_Example/Pods-AFNetworkExtend_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D7E1E3A9397CD8DE2661C4 /* Pods-AFNetworkExtend_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkExtend_Example.release.xcconfig"; path = "Target Support Files/Pods-AFNetworkExtend_Example/Pods-AFNetworkExtend_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F55AAB16C74349F8CFA4FD43 /* AFNetworkExtend.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AFNetworkExtend.podspec; path = ../AFNetworkExtend.podspec; sourceTree = "<group>"; };
+		F55AAB16C74349F8CFA4FD43 /* AFNetworkExtend.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AFNetworkExtend.podspec; path = ../AFNetworkExtend.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F565F2DF48ECD1647086C536 /* Pods-AFNetworkExtend_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkExtend_Tests.release.xcconfig"; path = "Target Support Files/Pods-AFNetworkExtend_Tests/Pods-AFNetworkExtend_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				326C620BF41F3F68142E76F5 /* Pods-AFNetworkExtend_Tests.debug.xcconfig */,
 				F565F2DF48ECD1647086C536 /* Pods-AFNetworkExtend_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,10 +270,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AFNetworkExtend_Example/Pods-AFNetworkExtend_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworkExtend/AFNetworkExtend.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworkExtend.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
