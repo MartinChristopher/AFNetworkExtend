@@ -1,5 +1,5 @@
 PODS:
-  - AFNetworkExtend (0.0.1):
+  - AFNetworkExtend (0.0.2):
     - AFNetworking (= 4.0.1)
   - AFNetworking (4.0.1):
     - AFNetworking/NSURLSession (= 4.0.1)
@@ -29,9 +29,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworkExtend: c8cefc38fa416ad0be91a755401dc2ee0740e39f
+  AFNetworkExtend: 5bc4301b791b79c8c507af30c4985e74c6d4f7c9
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
 
 PODFILE CHECKSUM: cbb1e239fd25f68b6a634c2ffb5e325e230de262
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

@@ -67,7 +67,13 @@ public class AFNetworkExtend: NSObject {
         // 活动指示器
         AFNetworkActivityIndicatorManager.shared().isEnabled = true
         // 初始化
-        let manager = AFHTTPSessionManager(baseURL: URL(string: baseUrl)!)
+        var manager: AFHTTPSessionManager!
+        if baseUrl.isEmpty {
+            manager = AFHTTPSessionManager()
+        }
+        else {
+            manager = AFHTTPSessionManager(baseURL: URL(string: baseUrl)!)
+        }
         // 请求数据类型
         switch requestType {
         case .JSON:
