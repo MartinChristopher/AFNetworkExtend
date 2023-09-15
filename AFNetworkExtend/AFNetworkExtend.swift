@@ -241,11 +241,11 @@ public extension AFNetworkExtend {
                 switch model.type {
                 case .Audio:
                     let fileName = timeStr + ".mp3"
-                    formData.appendPart(withFileData: fileData, name: "file", fileName: fileName, mimeType: "audio/quicktime")
+                    formData.appendPart(withFileData: fileData, name: "file", fileName: fileName, mimeType: "audio/mpeg")
                     break
                 case .Video:
                     let fileName = timeStr + ".mp4"
-                    formData.appendPart(withFileData: fileData, name: "file", fileName: fileName, mimeType: "video/quicktime")
+                    formData.appendPart(withFileData: fileData, name: "file", fileName: fileName, mimeType: "video/mp4")
                     break
                 }
             }
